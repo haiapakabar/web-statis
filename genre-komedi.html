@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="0;url=genre.html?genre=komedi" />
+    <title>Redirecting to Komedi</title>
+  </head>
+  <body>
+    <p>Redirecting to <a href="genre.html?genre=komedi">Komedi genre</a>.</p>
+  </body>
+</html>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <span class="chevron" id="closeSidebar">
+          <i data-feather="chevron-left"></i>
+        </span>
+      </div>
+      <div class="sidebar-content">
+        <h2 class="sidebar-title">Rilis Baru</h2>
+        <p class="sidebar-movie-tittle">Legenda Kelam Malin Kundang</p>
+        <img
+          src="https://i.ibb.co.com/H9sxS2c/MV5-BOWYy-ZTcz-ZTEt-ODBh-Ni00-OTAz-LTk0-MWQt-MWMw-ZDQy-MDdi-M2-Mx-Xk-Ey-Xk-Fqc-Gc-V1-QL75-UY562-CR35-0-3.jpg"
+          alt="Poster"
+          class="sidebar-img"
+          style="margin-top: 1rem"
+        />
+        <p style="margin-top: 1rem">27 November 2025</p>
+        <a href="#" style="color: #fff; text-decoration: underline"
+          >Lihat semua rilis</a
+        >
+      </div>
+    </aside>
+
+    <!-- GENRE DROPDOWN -->
+    <div class="genre-container">
+      <div class="genre-dropdown">
+        <div class="genre-label">GENRE</div>
+        <button class="genre-btn" id="genreBtn">
+          <span class="genre-underline">Pilih Genre</span>
+          <span class="genre-arrow">&#9660;</span>
+        </button>
+        <div class="genre-menu" id="genreMenu">
+          <a href="film.html">Film</a>
+          <a href="genre.html?genre=series">Series</a>
+          <a href="genre.html?genre=horor">Horor</a>
+          <a href="genre.html?genre=romansa">Romansa</a>
+          <a href="genre.html?genre=drama">Drama</a>
+          <a href="genre.html?genre=komedi">Komedi</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+      <div class="film-slider-row">
+        <!-- HITS NEW -->
+        <div class="film-slider-col">
+          <div class="section-title">Hits New</div>
+          <div class="swiper hits-swiper">
+            <div class="swiper-wrapper"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <!-- VERTICAL DIVIDER -->
+        <div class="vertical-divider"></div>
+
+        <!-- UP COMING -->
+        <div class="film-slider-col">
+          <div class="section-title">Up Coming</div>
+          <div class="swiper upcoming-swiper">
+            <div class="swiper-wrapper"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-col">
+          <b>VINMOEC</b><br />
+          Situs informasi film & series Indonesia Tahun 2025.
+        </div>
+        <div class="footer-col">
+          <b>MENU</b><br />
+          <a href="index.html">Home</a><br />
+          <a href="film.html">Film & Series</a><br />
+          <a href="about.html">About Us</a><br />
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <b>INFORMATION</b><br />
+          <a href="#">Privacy Policy</a><br />
+          <a href="#">Terms & Conditions</a><br />
+          <a href="#">Disclaimer</a>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; 2025 CINMOEV | Created by Team 4</div>
+      <div class="overlay" id="overlay"></div>
+    </footer>
+
+    <script src="js/film-data.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      // Initialize genre dropdown saat page load
+      document.addEventListener("DOMContentLoaded", function () {
+        initGenreDropdown();
+      });
+    </script>
+  </body>
+</html>

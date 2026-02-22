@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VINMOEC | Genre</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/film.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="top-bar">
+        <div class="logo-section">
+          <img
+            src="https://i.ibb.co.com/XcN7Fq7/Whats-App-Image-2026-01-16-at-17-04-36-removebg-preview.png"
+            alt="Logo"
+            class="logo-img"
+          />
+          <div class="logo">INMOEC</div>
+        </div>
+        <div class="hamburger-menu" id="hamburgerMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <nav class="nav-menu">
+        <a href="index.html">HOME</a>
+        <a href="film.html">FILM & SERIES</a>
+        <a href="aboout.html">ABOUT US</a>
+        <a href="contact.html">CONTACT</a>
+      </nav>
+    </header>
+
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <span class="chevron" id="closeSidebar">
+          <i data-feather="chevron-left"></i>
+        </span>
+      </div>
+      <div class="sidebar-content">
+        <h2 class="sidebar-title">Rilis Baru</h2>
+        <p class="sidebar-movie-tittle">Legenda Kelam Malin Kundang</p>
+        <img
+          src="https://i.ibb.co.com/H9sxS2c/MV5-BOWYy-ZTcz-ZTEt-ODBh-Ni00-OTAz-LTk0-MWQt-MWMw-ZDQy-MDdi-M2-Mx-Xk-Ey-Xk-Fqc-Gc-V1-QL75-UY562-CR35-0-3.jpg"
+          alt="Poster"
+          class="sidebar-img"
+          style="margin-top: 1rem"
+        />
+        <p style="margin-top: 1rem">27 November 2025</p>
+        <a href="#" style="color: #fff; text-decoration: underline"
+          >Lihat semua rilis</a
+        >
+      </div>
+    </aside>
+
+    <div class="genre-container">
+      <div class="genre-dropdown">
+        <div class="genre-label">GENRE</div>
+        <button class="genre-btn" id="genreBtn">
+          <span class="genre-underline">Pilih Genre</span>
+          <span class="genre-arrow">&#9660;</span>
+        </button>
+        <div class="genre-menu" id="genreMenu">
+          <a href="film.html">Film</a>
+          <a href="genre.html?genre=series">Series</a>
+          <a href="genre.html?genre=horor">Horor</a>
+          <a href="genre.html?genre=romansa">Romansa</a>
+          <a href="genre.html?genre=drama">Drama</a>
+          <a href="genre.html?genre=komedi">Komedi</a>
+        </div>
+      </div>
+    </div>
+
+    <main class="main-content">
+      <div class="film-slider-row">
+        <div class="film-slider-col">
+          <div class="section-title">Hits New</div>
+          <div class="swiper hits-swiper">
+            <div class="swiper-wrapper"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="vertical-divider"></div>
+        <div class="film-slider-col">
+          <div class="section-title">Up Coming</div>
+          <div class="swiper upcoming-swiper">
+            <div class="swiper-wrapper"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+      <section class="genre-grid-section">
+        <div class="genre-grid-header">
+          <p class="genre-tagline" id="genreTagline">Genre</p>
+          <h1 id="genreTitle">Film</h1>
+          <p id="genreDescription">Katalog penuh film & series terbaru.</p>
+        </div>
+        <div id="genreGrid" class="genre-grid"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-col">
+          <b>VINMOEC</b><br />
+          Situs informasi film & series Indonesia Tahun 2025.
+        </div>
+        <div class="footer-col">
+          <b>MENU</b><br />
+          <a href="index.html">Home</a><br />
+          <a href="film.html">Film & Series</a><br />
+          <a href="about.html">About Us</a><br />
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <b>INFORMATION</b><br />
+          <a href="#">Privacy Policy</a><br />
+          <a href="#">Terms & Conditions</a><br />
+          <a href="#">Disclaimer</a>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; 2025 CINMOEV | Created by Team 4</div>
+      <div class="overlay" id="overlay"></div>
+    </footer>
+
+    <script src="js/film-data.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

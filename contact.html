@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Film & series Indonesia</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+
+    <!-- font kitte one -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Kaisei+Decol&family=Kalnia:wght@100..700&family=Kite+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- feather icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <!-- navbar start -->
+    <!-- ...existing code... -->
+    <header class="header">
+      <div class="top-bar">
+        <div class="logo-section">
+          <img src="img/logo.jpeg" alt="Logo" class="logo-img" />
+          <div class="logo">INMOEC</div>
+        </div>
+        <div class="hamburger-menu" id="hamburgerMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <nav class="nav-menu">
+        <a href="index.html">HOME</a>
+        <a href="film.html">FILM & SERIES</a>
+        <a href="aboout.html">ABOUT US</a>
+        <a href="contact.html">CONTACT</a>
+      </nav>
+    </header>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <span class="chevron" id="closeSidebar">
+          <i data-feather="chevron-left"></i>
+        </span>
+      </div>
+      <div class="sidebar-content">
+        <h2 class="sidebar-title">Rilis Baru</h2>
+        <p class="sidebar-movie-tittle">Legenda Kelam Malin Kundang</p>
+        <img
+          src="WhatsApp Image 2026-02-23 at 08.18.55 (1).jpeg"
+          alt="Poster"
+          class="sidebar-img"
+          style="margin-top: 1rem"
+        />
+        <p style="margin-top: 1rem">27 November 2025</p>
+        <a href="#" style="color: #fff; text-decoration: underline"
+          >Lihat semua rilis</a
+        >
+      </div>
+    </aside>
+
+    <!-- ...existing code... -->
+
+     <main>
+        <div class="contact-container">
+            <div class="contact-form-section">
+                <h1>KONTAK KAMI!</h1>
+                <p class="subtitle">Harap isi formulir dengan jelas</p>
+                
+                <form id="contactForm" class="contact-form" method="post" action="#">
+                    <div class="form-group">
+                        <label for="nama">Nama</label>
+                        <input type="text" id="nama" name="name" placeholder="Ketik di sini..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Ketik di sini..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pesan">Pesan Anda</label>
+                        <textarea id="pesan" name="message" placeholder="Ketik di sini..." rows="6" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">KIRIM</button>
+                </form>
+            </div>
+
+            <!-- Contact Info Section -->
+            <div class="contact-info-section">
+                <div class="logo-circle">
+                    <img src="img/logo.jpeg" alt="INMOEC Logo" class="logo-circle-img">
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <p class="phone">0877-1333-5638</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <p class="email">vinmoec@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <p class="address">Jalan Simpang Lima, RT 02 RW 01, Kel. Mugassari, Kec. Semarang Selatan, Kota Semarang, 50249</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>VINMOEC:</h4>
+                <p>Situs informasi film & series Indonesia Tahun 2026.</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>MENU</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Film & Series</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>INFORMATION</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                </ul>
+            </div>
+
+    <!-- main js -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

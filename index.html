@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Film & series Indonesia</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- font kitte one -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Kaisei+Decol&family=Kalnia:wght@100..700&family=Kite+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- feather icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <!-- navbar start -->
+    <!-- ...existing code... -->
+    <header class="header">
+      <div class="top-bar">
+        <div class="logo-section">
+          <img src="img/logo.jpeg" alt="Logo" class="logo-img" />
+          <div class="logo">INMOEC</div>
+        </div>
+        <div class="hamburger-menu" id="hamburgerMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <nav class="nav-menu">
+        <a href="index.html">HOME</a>
+        <a href="film.html">FILM & SERIES</a>
+        <a href="aboout.html">ABOUT US</a>
+        <a href="contact.html">CONTACT</a>
+      </nav>
+    </header>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <span class="chevron" id="closeSidebar">
+          <i data-feather="chevron-left"></i>
+        </span>
+      </div>
+      <div class="sidebar-content">
+        <h2 class="sidebar-title">Rilis Baru</h2>
+        <p class="sidebar-movie-tittle">Balas Budi</p>
+        <img
+          src="img/genre komedi/balas budi.jpeg"
+          alt="Poster"
+          class="sidebar-img"
+          style="margin-top: 1rem"
+        />
+        <p style="margin-top: 1rem">27 November 2025</p>
+        <a
+          href="genre.html?slug=balas-budi"
+          style="color: #fff; text-decoration: underline"
+          >Lihat semua rilis</a
+        >
+      </div>
+    </aside>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- HERO SLIDER -->
+    <section class="hero">
+      <div class="hero-slider">
+        <article class="hero-slide active">
+          <img
+            src="img/Teaser-Poster-Malam-Pencabut-Nyawa-Landscape.jpg"
+            alt="Malam Pencabut Nyawa"
+          />
+          <div class="hero-text">
+            <h1>Malam Pencabut Nyawa</h1>
+            <p>Petualangan horor modern dari tim lokal.</p>
+          </div>
+        </article>
+        <article class="hero-slide">
+          <img
+            src="img/Kupilih-Jalur-Langit-Web-Banner-MD-Website-1400x675px_11zon.jpg"
+            alt="Gadis Kretek"
+          />
+          <div class="hero-text">
+            <h1>Kupilih Jalur Langit</h1>
+            <p>Drama keluarga yang penuh konflik, cinta, dan pengorbanan.</p>
+          </div>
+        </article>
+        <article class="hero-slide">
+          <img src="img/poster-film-komang-1743745209566_169.png" alt="Norma" />
+          <div class="hero-text">
+            <h1>Komang</h1>
+            <p>Kisah cinta sederhana yang tumbuh dari doa dan ketulusan.</p>
+          </div>
+        </article>
+      </div>
+      <div class="hero-dots">
+        <span class="hero-dot active" data-slide="0"></span>
+        <span class="hero-dot" data-slide="1"></span>
+        <span class="hero-dot" data-slide="2"></span>
+      </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-container">
+      <!-- TRENDING SECTION -->
+      <section class="trending-section">
+        <h2>Trending Bulan Ini</h2>
+        <div class="trending-grid" id="trendingGrid"></div>
+      </section>
+
+      <!-- CINEMA NOTE SIDEBAR -->
+      <aside class="cinema-note">
+        <h3>CINEMA NOTE</h3>
+
+        <div class="cinema-scroll">
+          <div class="note-item">
+            <img src="img/cinema note/angga.jpg" alt="Angga Yunanda" />
+            <p>“Berani mencoba lebih penting daripada takut gagal.”</p>
+            <span class="actor-name">— Angga Yunanda</span>
+          </div>
+
+          <div class="note-item">
+            <img src="img/cinema note/christine.jpg" alt="Christine Hakim" />
+            <p>
+              "Saya rela melakukan apa saja supaya penonton merasakan jiwa
+              karakternya."
+            </p>
+            <span class="actor-name">— Christine Hakim</span>
+          </div>
+
+          <div class="note-item">
+            <img src="img/cinema note/rezza.jpg" alt="Reza Rahadian" />
+            <p>
+              "Mata pemeran tidak bisa dibohongi... peran harus selalu bisa
+              meyakinkan penonton."
+            </p>
+            <span class="actor-name">— Reza Rahadian</span>
+          </div>
+
+          <div class="note-item">
+            <img src="img/cinema note/prilly.jpg" alt="Prilly Latuconsina" />
+            <p>
+              "Bermimpi itu gratis. Yang mahal adalah keberanian untuk
+              memulainya."
+            </p>
+            <span class="actor-name">— Prilly Latuconsina</span>
+          </div>
+
+          <div class="note-item">
+            <img src="img/cinema note/ikow.jpg" alt="Iko Uwais" />
+            <p>
+              “Disiplin kecil setiap hari, membangun hasil besar suatu saat
+              nanti.”
+            </p>
+            <span class="actor-name">— Iko Uwais</span>
+          </div>
+
+          <div class="note-item">
+            <img src="img/cinema note/jefry.jpg" alt="Jefri Nichol" />
+            <p>
+              “Kesalahan bukan akhir cerita. Itu cuma bab yang bikin kita
+              tumbuh.”
+            </p>
+            <span class="actor-name">— Jefri Nichol</span>
+          </div>
+
+          <div class="note-item">
+            <img src="img/cinema note/bryan.jpg" alt="Bryan Domani" />
+            <p>
+              “Kita tumbuh dari pilihan yang kita ambil, bukan dari alasan yang
+              kita cari.”
+            </p>
+            <span class="actor-name">— Bryan Domani</span>
+          </div>
+
+          <div class="note-item">
+            <img src="img/cinema note/sheila.jpg" alt="Sheila Dara" />
+            <p>
+              "Tak semua luka harus disembunyikan. Sebagian mengajarkan kita
+              arah.”
+            </p>
+            <span class="actor-name">— Sheila Dara</span>
+          </div>
+
+          <div class="note-item">
+            <img src="img/cinema note/mawar.jpg" alt="Mawar Eva de Jongh" />
+            <p>
+              “Hati yang tulus tak pernah sia-sia, meski tak selalu dimengerti.”
+            </p>
+            <span class="actor-name">— Mawar Eva de Jongh</span>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-col">
+          <b>VINMOEC</b><br />
+          Situs informasi film & series Indonesia Tahun 2025.
+        </div>
+        <div class="footer-col">
+          <b>MENU</b><br />
+          <a href="index.html">Home</a><br />
+          <a href="film.html">Film & Series</a><br />
+          <a href="about.html">About Us</a><br />
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <b>INFORMATION</b><br />
+          <a href="#">Privacy Policy</a><br />
+          <a href="#">Terms & Conditions</a><br />
+          <a href="#">Disclaimer</a>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; 2025 CINMOEV | Created by Team 4</div>
+      <div class="overlay" id="overlay"></div>
+    </footer>
+
+    <script src="js/film-data.js"></script>
+    <!-- main js -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
